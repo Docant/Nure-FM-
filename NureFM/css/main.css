@@ -1,0 +1,281 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~CSS~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Century Gothic;
+}
+
+body {
+    background: #fff;
+}
+
+/*----------Head----------*/
+
+.headBlock1,
+.headBlock2,
+.headBlock3 {
+    height: 155px;
+    background-color: #333;
+    border-bottom: 2px solid #dbdbdb;
+}
+
+/*-----Logo NureFM-----*/
+
+.headBlock1 > div > img {
+    width: 60%;
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+    margin-bottom: 15px;
+}
+
+/*-----Main Navigation-----*/
+
+#mainNavigation > ul {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-left: 18%;
+    font-size: 18px;
+    position: absolute;
+    bottom: 0;
+}
+
+#mainNavigation > ul > li {
+    display: inline;
+    padding: 0 10px 0;
+}
+
+#mainNavigation > ul > li > a {
+    text-decoration: none;
+}
+
+#mainNavigation > ul > li > a:hover {
+    color: #000;
+    text-decoration: none;
+    padding-bottom: 3.5%;
+    border-bottom: 2px solid #ff4e00;
+}
+
+#mainNavigation > ul > li > a.selected {
+    color: #fff;
+}
+
+#mainNavigation > ul > li > a.unselected {
+    color: #9a9a9a;
+}
+
+ul > li > a > img {
+    max-width: 50px;
+}
+
+
+/*----------Block 2----------*/
+
+.headBlock2{
+    align-content: center;
+}
+
+.headBlock2>div>audio{
+    margin: auto;
+    margin-top: 10%;
+}
+
+/*----------Block 3----------*/
+
+.headBlock3 {
+    border-left: 2px solid #dbdbdb;
+}
+
+/*-----Languages-----*/
+
+#languages {
+    min-height: 25px;
+    text-align: center;
+    font-size: 18px;
+    padding-top: 15px;
+}
+
+#languages > ul > li {
+    display: inline;
+    padding: 0 10px 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+#languages > ul > li > a {
+    text-decoration: none;
+}
+
+#languages > ul > li > a.unselected {
+    color: #666;
+}
+
+#languages > ul > li > a.selected {
+    color: #ff4e00;
+}
+
+#languages > ul > li > a:hover {
+    color: #fff;
+}
+
+/*-----SocNetworks-----*/
+
+#followuslist {
+    font-size: 18px;
+    color: #fff;
+    margin: 0;
+    text-align: center;
+}
+
+#followuslist > ul > li {
+    display: inline;
+    padding: 0;
+}
+
+/*----------Content Body----------*/
+
+#content {
+    margin: 0;
+    padding: 0;
+}
+
+/*-----Gif Image-----*/
+
+#gif-image {
+    text-align: center;
+}
+
+
+#gif-image > img {
+    width: 62%;
+    margin: 25px auto 15px;
+    border: 2px solid #221816;
+}
+
+#gif-image > p {
+    margin: 0;
+    padding-bottom: 10px;
+    color: black;
+    font-size: 25px;
+}
+
+/*-----Middle Line-----*/
+
+#newsLine {
+    display: inline-flex;
+    padding: 0;
+    padding-left: 3.5%;
+}
+
+#newsLine > div > hr {
+
+    border-bottom: 1px solid #bbb;
+}
+
+.line {
+    padding: 0;
+    margin: 0;
+    width: 72.5%;
+}
+
+.NewsName {
+    font-size: 18px;
+    color: #000;
+    padding: 0;
+    margin-right: 10px;
+}
+
+.NewsDate {
+    font-size: 18px;
+    color: #666;
+    padding: 0;
+    margin-left: 10px;
+}
+
+/*-----Article-----*/
+
+#articleBlock {
+    margin-bottom: 25px;
+    padding-left: 2.5%;
+    /*border-bottom: 2px solid #666;*/
+}
+
+#articleBlock > div > img {
+    width: 105%;
+    height: 105%;
+    margin: 0 auto 30px;
+}
+
+#articleBlock > div > img {
+    min-width: 50%;
+    min-height: 50%;
+}
+
+.article {}
+
+.articleTitle {
+    font-size: 18px;
+    color: #9a9a9a;
+}
+
+.articleText {
+    font-size: 100%;
+    color: #000;
+}
+
+
+.articleUnderline > hr {
+    border-bottom: 1px solid #bbb;
+    width: 95.5%;
+}
+
+/*----------Podcast----------*/
+
+#podcasts {
+    color: #000;
+    border-left: 2px solid #dbdbdb;
+    padding: 0;
+}
+
+.ourpodcastsText {
+    color: #fff;
+    text-align: center;
+    background: #ff4e00;
+    padding: 0;
+    width: 100%;
+    height: 50px;
+    -webkit-box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.75);
+}
+
+.ourpodcastsText > p {
+    font-size: 24px;
+    margin: 0;
+    padding-top: 5px;
+    margin-top: 30px;
+}
+
+#podcasts > ul {
+    text-align: center;
+    list-style-type: none;
+}
+
+#podcasts > ul > li {
+    margin: 10px auto 25px;
+    list-style-type: none;
+}
+
+#podcasts > ul > li > iframe {
+    width: 285px;
+    height: 95px;
+}
+
+#podcasts > ul > li > p {
+    font-size: 22px;
+    text-align: left;
+    margin-left: 25px;
+}
+
+/*----------Footer----------*/

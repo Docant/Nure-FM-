@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-widtxh, initial-scale=1">
+    <title>NURE[FM]</title>
+    <link rel="shortcut icon" href="css/Images/nurefm.png" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css">
+    <link rel="stylesheet" href="libs/font-awesome-4.6.3/font-awesome.min.css">
+    <!--css libs-->
+    <link rel="stylesheet" href="libs/css/fonts.css">
+    <link rel="stylesheet" href="libs/css/media.css">
+    <link rel="stylesheet" href="libs/fullPages/jquery.fullPage.css">
+    <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
+    <link rel="stylesheet" href="libs/owl-carousel/owl.carousel.css" />
+    <link rel="stylesheet" href="libs/countdown/jquery.countdown.css" />
+    <!--css styles-->
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+    <!-- Шапка -->
+    <header>
+        <!--Блок 1-->
+        <div class="col-md-6 headBlock1">
+            <!--Эмблема сайта-->
+            <div class="col-md col-md-offset-2">
+                <img src="css/Images/Logo1.png" alt="Лого сайта">
+            </div>
+            <!--Линки на сайты-->
+            <div class="col-md" id="mainNavigation">
+                <ul>
+                    <li class="selected"><a href="http://fm.nure.ua" class="selected">Слушать</a></li>
+                    <li class="unselected"><a href="http://i.nure.ua/" class="unselected">Читать</a></li>
+                    <li class="unselected"><a href="https://www.youtube.com/channel/UCFwYsa2_dfuRroZPF8v3ZjA" class="unselected">Смотреть</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--Блок 2-->
+        <div class="col-md-3 headBlock2">
+            <div class="col-md">
+                <audio controls>
+                    <source src="http://rtest.nure.ua" />
+                </audio>
+            </div>
+        </div>
+        <!--Блок 3-->
+        <div class="col-md-3 headBlock3">
+            <div class="col-md" id="languages">
+                <ul>
+                    <li><a href="" class="selected">RU</a></li>
+                    <li><a href="" class="unselected">UA</a></li>
+                    <li><a href="" class="unselected">ENG</a></li>
+                </ul>
+            </div>
+            <div class="col-md" id="followuslist">
+                <p>Следи за нами:</p>
+                <ul>
+                    <li><a href="https://facebook.com/nure.fm/"><img src="css/Images/FollowUs/FacebookIcon.png" alt=""></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCjTaUHMInZWfFwCbcGDD6zw"><img src="css/Images/FollowUs/YoutubeIcon.png" alt=""></a></li>
+                    <li><a href=""><img src="css/Images/FollowUs/CloudIcon.png" alt=""></a></li>
+                    <li><a href=""><img src="css/Images/FollowUs/InstagramIcon.png" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!--Контент-->
+    <div class="col-md-9" id="content">
+        <!--Блок с гифкой-->
+        <div id="gif-image">
+            <img src="css/Images/TunePositiv.gif" alt="TuneYourPositive">
+            <p>Настройся на позитив!</p>
+        </div>
+
+        <!--Блок линия-->
+        <div class="col-md-11 col-md-offset-1" id="newsLine">
+            <!--Заголовок новостей-->
+            <div class="col-md-1 NewsName">
+                <p>Новости</p>
+            </div>
+            <!--линия-->
+            <div class="col-md-9 line">
+                <hr>
+            </div>
+            <!--Текущая дата на сайте-->
+            <div class="col-md-2 NewsDate">
+                <p>
+                    <script type="text/javascript">
+                        //Скрипт текущей даты на сайте
+                        var d = new Date();
+                        var day = d.getDate(),
+                            mnth = d.getMonth() + 1;
+                        var days = new Array("Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб");
+                        if (day < 10)
+                            day = "0" + day;
+                        if (mnth < 10)
+                            mnth = "0" + mnth;
+                        document.write(days[d.getDay()] + " / " + day + "." + mnth);
+
+                    </script>
+                </p>
+            </div>
+        </div>
+
+        <!------------------------------------------------Блок статьи-->
+        <div class="col-md-12" id="articleBlock">
+            <!--Картинка статьи-->
+            <div class="col-md-4 col-md-offset-1">
+                <img src="css/Images/ArticlePreview.png" alt="ArticelPreview">
+            </div>
+
+            <!--Статья-->
+            <div class="col-md-7 article">
+                <!--Заголовок-->
+                <p class="articleTitle">18.10.17 Начало вещания</p>
+                <!--Сама статья-->
+                <p class="articleText">
+                    <!-- работает но нельзя изменить шрифт текста ->
+                    <iframe src="articles/18.10.txt"></iframe>-->
+                    Всякий уважающий себя Харьковский национальный университет радиоэлектроники должен иметь своё радио. И мы - не исключение :-) Радио NURE.FM запускает вещание в режиме 24/7. У нас дают не только вкусную музыку, актуальные новости, познавательные передачи, интересные интервью, но и самое главное - хорошее настроение! Следите за нами, мы уже здесь!</p>
+            </div>
+            <div class="col-md-11 col-md-offset-1 articleUnderline">
+                <hr>
+            </div>
+        </div>
+        <!------------------------------------------------Блок статьи-->
+
+    </div>
+
+    <!--Подкасты-->
+    <div class="col-md-3" id="podcasts">
+        <div class="ourpodcastsText">
+            <p>Наши подкасты:</p>
+        </div>
+        <ul>
+            <li>
+                <p>1. Подкаст...</p>
+                <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/345738600&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe></li>
+            <li>
+                <p>2. Подкаст...</p>
+                <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/347171672&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe></li>
+            <li>
+                <p>3. Подкаст...</p>
+                <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/347174481&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe></li>
+        </ul>
+    </div>
+
+    <!--Подвал-->
+    <footer>
+
+    </footer>
+
+    <!-- jQuery (JavaScript plugins) -->
+    <!--Если нужно чегот, то всё подготовлено, если не нужно, то просто удалите-->
+    <script src="libs/jquery/jquery-3.1.1.js"></script>
+    <script src="libs/bootstrap/bootstrap.min.js"></script>
+    <script src="libs/fullPages/jquery.fullPage.js"></script>
+    <script src="libs/scrollto/jquery.scrollTo.min.js"></script>
+    <script src="libs/fancybox/jquery.fancybox.pack.js"></script>
+    <script src="libs/owl-carousel/owl.carousel.min.js"></script>
+    <script src="libs/waypoints/jquery.waypoints.min.js"></script>
+    <script src="libs/countdown/jquery.countdown.min.js"></script>
+    <script src="libs/countdown/jquery.countdown-ru.js"></script>
+    <script src="libs/countdown/jquery.plugin.js"></script>
+    <script src="libs/landing-nav/navigation.js"></script>
+    <!--js (JavaScript)-->
+    <script src="js/common.js"></script>
+</body>
+
+</html>
